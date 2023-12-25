@@ -1,4 +1,4 @@
-<?php
+<<?php
 $msb_url = "https://www.msb.gov.tr/";
 $sehit_bilgisi = array();
 $gosterilen_sayfa = 0; // 1. sayfa için 0
@@ -25,7 +25,7 @@ $cikti = json_decode($index, true)["ModelString"];
 preg_match_all('@<p class="sehit-adi">(.*?)</p>@si', $cikti, $sehit_adi);
 preg_match_all('@<p class="sehit-sinif">(.*?)</p>@si', $cikti, $sehit_sinif);
 preg_match_all('@<p class="sehit-sicil">(.*?)</p>@si', $cikti, $sehit_sicil);
-preg_match_all('@<div class="sehit-resim" style="background-image: url((.*?));"@si', $cikti, $sehit_resim);
+preg_match_all('@/Content/TempImage/SehitVefat/(.*?)/1.jpg@si', $cikti, $sehit_resim);
 preg_match_all('@Silah arkadaşımız, (.*?) tarihinde@si', $cikti, $tarih);
 
 $sehit_bilgisi["sehit_adi"] = $sehit_adi[1];
