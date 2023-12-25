@@ -34,6 +34,13 @@ $sehit_bilgisi["sehit_sicil"] = $sehit_sicil[1];
 $sehit_bilgisi["sehit_resim"] = $sehit_resim[1];
 $sehit_bilgisi["tarih"] = $tarih[1];
 
-// çıktıyı ekrana yazdırın
-print_r($sehit_bilgisi);
+// çıktıyı ekrana yazdırın: print_r($sehit_bilgisi);
+
+// örnek çıktı
+for($i=0; $i<count($sehit_bilgisi["sehit_adi"]); $i++) {
+    echo "<img src='".$msb_url."/Content/TempImage/SehitVefat/".$sehit_bilgisi["sehit_resim"][$i]."/1.jpg'>
+    <p>".$sehit_bilgisi["sehit_adi"][$i]."</p>
+    <p>".$sehit_bilgisi["sehit_sicil"][$i]."</p>
+    <p>".$sehit_bilgisi["tarih"][$i]."</p>";
+}
 ?>
