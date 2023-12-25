@@ -1,4 +1,4 @@
-<<?php
+<?php
 $msb_url = "https://www.msb.gov.tr/";
 $sehit_bilgisi = array();
 $gosterilen_sayfa = 0; // 1. sayfa için 0
